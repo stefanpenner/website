@@ -27,8 +27,8 @@ module TOC
 
         request_path_splits = request.path.split('/')
 
-        current_url = request_path_splits[1]
-        sub_url     = request_path_splits[2]
+        current_url = request_path_splits[2]
+        sub_url     = request_path_splits[3]
         intro_page  = request_path_splits.length == 3
         sub_url     = nil if intro_page
         chapter     = entries[0].url.split("/")[0]

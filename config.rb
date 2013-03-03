@@ -117,7 +117,7 @@ helpers do
 
   def link_to_page name, url
     path = request.path
-    current = path =~ Regexp.new('^' + url[1..-1] + '.*\.html')
+    current = path =~ Regexp.new('^' + url[1..-1] + '.*')
 
     if path == 'index.html' and name == 'about'
       current = true
