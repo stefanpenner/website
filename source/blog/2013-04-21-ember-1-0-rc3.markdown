@@ -9,37 +9,6 @@ As we said when we released RC1, the next few releases will be
 about bugfixes and improvements, and should not have any breaking
 changes.
 
-- many documentations
-- many bug fixes
-
-- ember cdn
-
-### New 
-
-### New Handlebar Helpers
-
-We now provide elegant handlebar helpers to wrap the fairly verbose
-`Ember.TextField` and `Ember.TextArea` views.
-
-```handlebars
-  {{view Ember.TextField valueBinding="name"}}
-  {{view Ember.TextArea valueBinding="bop"}}
-```
-
-```handlebars
-{{input value=name}}
-{{textarea value=name}}
-```
-
-- {{text Area}} and {{input }} helpers
-
-- performance
-  - Insert adjacent child views in batches rather than individually.
-
-- test
-  - ember-test (ebryn)
-  - app#reset improvements
-
 ### Namespace Lookup for Controllers
 
 It is now possible to look up controllers that are included in a
